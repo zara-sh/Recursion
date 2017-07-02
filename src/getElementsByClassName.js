@@ -10,4 +10,6 @@
 
 var getElementsByClassName = function (className) {
   // YOUR CODE HERE
+  var allNodes=document.body.children;
+  
 };

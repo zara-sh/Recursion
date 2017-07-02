@@ -14,6 +14,17 @@
   than 1.
 */
 
-var fib = function (n) {
+
+var fib = function (n) { 
   // YOUR CODE HERE
+  if (n<=2) 
+  {
+    return [1, 1];
+  } 
+  else 
+  {
+    var array = fib(n - 1);
+    array.push(array[array.length - 1] + array[array.length - 2]);
+    return array;
+  }
 };
